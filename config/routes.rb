@@ -1,6 +1,7 @@
 KatcodesCom::Application.routes.draw do
   get "portfolio" => 'portfolio#index'
   get "about" => 'homepage#about'
+  get "contact" => 'homepage#contact'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

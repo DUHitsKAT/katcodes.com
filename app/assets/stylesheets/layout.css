@@ -9,10 +9,6 @@ padding: 0;
 letter-spacing: 2px;
 }
 
-#currentPage {
-border-bottom: 2px solid #000;
-font-weight: 400;
-}
 /*	      
 @media (max-width: 550px) {
 h1{font-size:2.2rem;}
@@ -27,26 +23,37 @@ h6{font-size:1.2rem;}
 /* true spirit styles */
 .solution{
 }
+
 .preview-module{
 background-color: rgba(0,0,0,.1);
 min-height: 550px;
 padding: 15px;
 }
+
 .preview-img{
 width: 100%;
 margin: 0 auto;
 }
 
 .img-about{
-width: 30%;
+width: 35%;
 padding-right: 20px;
 }
 
 .footer-nav{
 margin: 0 auto;
 }
+
 .txt-upper
 {
 text-transform: uppercase;
 }
+
+.quote {
+font-family: serif;
+color: #4f4f4f;
+padding-top: 2em;
+font-style: italic;
+}
+
     
