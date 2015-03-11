@@ -31,9 +31,12 @@ padding: 15px;
 }
 
 .preview-img{
-width: 100%;
+max-width: 100%;
+max-height: 425px;
 margin: 0 auto;
+display: block;
 }
+
 
 .img-about{
 width: 35%;
@@ -55,5 +58,7 @@ color: #4f4f4f;
 padding-top: 2em;
 font-style: italic;
 }
+
+.txt-center {text-align:center;}
 
     
