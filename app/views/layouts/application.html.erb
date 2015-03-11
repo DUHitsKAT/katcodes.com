@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>KatcodesCom</title>
+  <title>katcodes.com</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+	
+	<nav><div class="container">
+		<h4 class="txt-upper u-pull-left logo">Kathleen Guzman</h4>
+			<ul class="txt-upper u-pull-right">
+				<li><a href="/">Home</a></li>
+				<li><a href="/portfolio/">Portfolio</a></li>
+				<li><a href="/about/">About</a></li>
+				<li><a href="/contact/">Contact</a></li>
+			</ul>
+	</div></nav>
+	<header><div class="container"><h2 class="page-title">Page Title</h2></div></header>
+	<section><div class="container">
+		<%= yield %>
+	</div></section>
 
-<%= yield %>
+	<footer>
+		<nav><div class="container">
+			<ul class="footer-nav txt-upper">
+				<li><a href="/">Home</a></li>
+				<li><a href="/portfolio/">Portfolio</a></li>
+				<li><a href="/about/">About</a></li>
+				<li><a href="/contact/">Contact</a></li>
+			</ul>
+	</div></nav>
+	</footer>
 
-</body>
+ </body>
 </html>

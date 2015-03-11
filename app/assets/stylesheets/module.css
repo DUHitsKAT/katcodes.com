@@ -1,0 +1,19 @@
+.page-title {
+color: #000;
+font-weight: 500;
+letter-spacing: 4px;
+margin: 0;
+padding: 0;
+padding-top: 140px;
+padding-bottom: 20px;
+text-transform: uppercase;
+}
+
+.project-module {
+	background-color: rgba(0,0,0,.1);
+}
+
+.project-module aside {
+	padding:10px;
+	width:100px;
+}
