@@ -16,7 +16,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+gem 'therubyracer', platforms: :ruby
+gem 'passenger'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -29,7 +30,7 @@ gem 'jbuilder', '~> 1.2'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', require: false
+  gem 'sdoc', :require =>  false
 end
 
 # Use ActiveModel has_secure_password
@@ -39,7 +40,9 @@ end
 # gem 'unicorn'
 
 # Use Capistrano for deployment
-# gem 'capistrano', group: :development
+gem 'capistrano', :group => :development
+gem 'capistrano-rails',   '~> 1.1', :require => false, :group => :development
+gem 'capistrano-bundler', '~> 1.1', :require => false, :group => :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
