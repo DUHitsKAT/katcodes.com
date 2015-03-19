@@ -1,6 +1,7 @@
 
 nav li a:hover {
-border-bottom: 1px solid rgba(0,0,0,.9);
+border-bottom: 1px solid #C00;
+color: #C00;
 }
 
 #currentPage {

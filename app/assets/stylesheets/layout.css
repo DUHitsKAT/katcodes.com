@@ -9,21 +9,6 @@ padding: 0;
 letter-spacing: 2px;
 }
 
-/*	      
-@media (max-width: 550px) {
-h1{font-size:2.2rem;}
-h2{font-size:2rem;}
-h3{font-size:1.8rem;}
-h4{font-size:1.6rem;}
-h5{font-size:1.4rem;}
-h6{font-size:1.2rem;}
-}*/
-
-
-/* true spirit styles */
-.solution{
-}
-
 .preview-module{
 background-color: rgba(0,0,0,.1);
 min-height: 550px;
@@ -36,7 +21,6 @@ max-height: 425px;
 margin: 0 auto;
 display: block;
 }
-
 
 .img-about{
 width: 35%;
@@ -63,4 +47,21 @@ font-style: italic;
 
 .txt-tiny{font-size: 12px;}
 
+.button-prototype {
+	font-weight: 400; 
+	font-family: 'Avenir Next Condensed', 'Open Sans Condensed', sans-serif;
+	line-height: 1;
+	height: auto;
+	padding: .6em 1em
+}
+
+#navCaseStudies{
+	text-align: center;
+}
+
+#navCaseStudies ul {
+	list-style: none;
+}
+
+#navCaseStudies li {display:inline-block;}
     

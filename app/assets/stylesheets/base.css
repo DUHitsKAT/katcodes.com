@@ -9,11 +9,11 @@ nav {
 color: #000;
 display: block;
 padding: 15px 0;
+font-weight: 300;
 }
 
 nav a {
 color:#000;
-font-weight: 300;
 text-decoration: none;
 }
 
@@ -28,6 +28,7 @@ display: inline-block;
 margin: 5px 0;
 padding: 0 5px;
 letter-spacing: 2px;
+font-size: 22px;
 }
 
 header {
