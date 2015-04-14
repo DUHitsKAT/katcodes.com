@@ -11,20 +11,30 @@
   <% if current_page?(root_path) %>
   	<meta name="google-site-verification" content="91pFaJi7VXw-axw4c6bzZIhv6Jn2lRytJzlR7g0S2mU" />	
  <% end %>
-  
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
 </head>
 <body>
 	
-	<nav><div class="container">
-		<h4 class="txt-upper u-pull-left logo"><a href="/">Kathleen Guzman</a></h4>
-			<ul class="txt-upper u-pull-right">
-				<li><a href="/portfolio/">Portfolio</a></li>
+	<nav><div class="container txt-upper">
+		<h4 class="u-pull-left logo"><a href="/">Kathleen Guzman</a></h4>
+			<ul class="u-pull-right">
+				<li class="submenu-container"><a href="/">Portfolio</a>
+					<ul class="submenu">
+						<li><a href="/motoroso/">Motoroso</a></li>
+						<li><a href="/scholastic/">Scholastic</a></li>
+						<li><a href="/truespirit/">True Spirit</a></li>
+					</ul>
+				</li>
 				<li><a href="/about/">About</a></li>
 				<li><a href="/contact/">Contact</a></li>
-				<li><a href="/">Home</a></li>
 			</ul>
 	</div></nav>
-	<header><div class="container"><h2 class="page-title"><%= @page_title %></h2></div></header>
+
+	<header><div class="container">
+		<h3 class="quote txt-center">I value simplicity and strive to create a seamless experience for users.</h3>
+		<h2 class="page-title"><%= @page_title %></h2>
+	</div></header>
+	
 	<section><div class="container">
 		<%= yield %>
 	</div></section>
@@ -32,10 +42,10 @@
 	<footer>
 		<nav><div class="container">
 			<ul class="footer-nav txt-upper">
-				<li><a href="/portfolio/">Portfolio</a></li>
+				<li><a href="/">Portfolio</a></li>
 				<li><a href="/about/">About</a></li>
 				<li><a href="/contact/">Contact</a></li>
-				<li><a href="/">Home</a></li>
+				<li><a href="/other/">Other</a></li>
 			</ul>
 	</div></nav>
 	<span class="txt-center txt-tiny">Designed & built by Kathleen Guzman using <a href="http://getskeleton.com">Skeleton</a></span>
@@ -52,5 +62,11 @@
     ga('send', 'pageview');
 
   </script>
+  <!-- Modal Code -->
+		<div class="modal overlay">
+			<div class="image"><img src="" class="modalImg"></div>
+		</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
  </body>
 </html>

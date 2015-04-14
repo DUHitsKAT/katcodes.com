@@ -1,58 +1,122 @@
+.submenu-container{
+	position: relative;
+}
+
+.submenu {
+	background-color: #fdfdfd;
+	display: none;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 35px;
+	z-index: 100;
+	-webkit-box-shadow: 1px 2px 1px 0px rgba(204,204,204,1);
+	-moz-box-shadow: 1px 2px 1px 0px rgba(204,204,204,1);
+	box-shadow: 1px 2px 1px 0px rgba(204,204,204,1);
+}
+
+.submenu li {
+	display: block;
+	padding: .5em 1em;
+	margin: 0;
+}
+
+.submenu li:hover{
+	background-color: #C00;
+}
+
+
+.submenu li:hover a {
+	color:#FFF;
+	border-color: #FFF;
+}
+
 .img-placeholder {
-height:100%;
-width:100%;
-background-color: rgba(0,0,0,.6);
+	background-color: rgba(0,0,0,.6);
+	height:100%;
+	width:100%;
 }
+
 .logo {
-margin: 0; 
-padding: 0;
-letter-spacing: 2px;
+	letter-spacing: 2px;
+	margin: 0; 
+	padding: 0;
 }
 
-.preview-module{
-background-color: rgba(0,0,0,.1);
-min-height: 550px;
-padding: 15px;
+.preview-module {
+	background-color: rgba(0,0,0,.1);
+	min-height: 550px;
+	padding: 15px;
 }
 
-.preview-img{
-max-width: 100%;
-max-height: 425px;
-margin: 0 auto;
-display: block;
+.preview-img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	max-height: 425px;
 }
 
-.img-about{
-width: 35%;
-padding-right: 20px;
+.img-about {
+	padding-right: 20px;
+	width: 35%;
 }
 
-.footer-nav{
-margin: 0 auto;
-}
-
-.txt-upper
-{
-text-transform: uppercase;
+.footer-nav {
+	margin: 0 auto;
 }
 
 .quote {
-font-family: serif;
-color: #4f4f4f;
-padding-top: 2em;
-font-style: italic;
+	color: #4f4f4f;
+	font-family: 'Dancing Script', cursive;
+	padding: 1em 0 2em 0;
 }
 
-.txt-center {text-align:center;}
+.quote:before, 
+.quote:after {
+	content: '"';
+}
 
-.txt-tiny{font-size: 12px;}
+.txt-center {
+	text-align:center;
+}
+
+.txt-tiny{
+	font-size: 12px;
+}
 
 .button-prototype {
-	font-weight: 400; 
 	font-family: 'Avenir Next Condensed', 'Open Sans Condensed', sans-serif;
-	line-height: 1;
+	font-weight: 400; 
 	height: auto;
-	padding: .6em 1em
+	line-height: 1;
+	padding: .6em 1em;
+}
+
+.button.button-primary {
+	background-color: #C00;
+	border-color: #A00;
+}
+
+.button.button-primary:hover {
+	background-color: #A00;
+	border-color: #A00;
+}
+
+.button.button-secondary:hover {
+	background-color: rgb(187,187,187);
+	color: #FFF;
+	border-color: rgb(187,187,187);
+
+}
+
+.project-title {
+	background-color: #C00;
+	color:#FFF;
+	font-family: 'Avenir Next Condensed', 'Open Sans Condensed', sans-serif;
+	font-weight: 400;
+	letter-spacing: 1px;
+	padding:.25em 1em;
 }
 
 #navCaseStudies{
@@ -63,5 +127,21 @@ font-style: italic;
 	list-style: none;
 }
 
-#navCaseStudies li {display:inline-block;}
-    
+#navCaseStudies li {
+	display:inline-block;
+}
+
+.txt-upper {
+	text-transform: uppercase;
+}
+
+.txt-sans {
+	font-family: 'Avenir Next Condensed', 'Open Sans Condensed', sans-serif;
+}
+.txt-serif { 
+	font-family: 'Playfair Display', serif;
+}
+
+.txt-upper {
+	text-transform: uppercase;
+}  

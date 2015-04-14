@@ -14,3 +14,27 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function() {
+	$(".show-modal").click(function(event){
+		event.preventDefault();
+		$("body").addClass("fixed");
+		$(".modal").show();
+		var x = $(event.currentTarget).attr("src");
+		$(".modalImg").attr("src", x);
+		//$("#overlay").css("top",event.pageY);
+		console.log(event.pageY);
+	});
+
+	$(".overlay").click(function(){
+		$(".modal").hide();
+		$("body").removeClass("fixed");
+	});
+
+	$(".submenu-container").hover(function() {
+	  $(".submenu").show("blind", 500);
+	},
+	function(){
+	   $(".submenu").hide("blind", 500);
+	});
+});

@@ -1,10 +1,51 @@
 
-nav li a:hover {
-border-bottom: 1px solid #C00;
-color: #C00;
+nav a:hover {
+	border-bottom: 1px solid #C00;
+	color: #C00;
 }
 
 #currentPage {
-border-bottom: 2px solid #000;
-font-weight: 400;
+	border-bottom: 2px solid #000;
+	font-weight: 400;
+}
+
+.fixed {
+	position: fixed;
+	width:100%;
+	overflow: scroll;
+}
+
+.modal{
+	display: none;
+}
+
+.overlay {
+	position: fixed; 
+	background-color: rgba(0,0,0,0.8);
+	min-height: 200%;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+	overflow: scroll;
+}
+
+.image {
+	background-color:#FFF;
+	text-align: center;
+	margin: 0 auto;
+	width: 100px;
+	height: 100px;
+}
+
+.modalImg{
+	max-height: 100%;
+	max-width: 100%;
+	vertical-align:middle;
+	padding: 1em 0;
+}
+
+.post-url:after {
+	content: url();
+	color:#CCC;
 }
