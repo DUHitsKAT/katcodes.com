@@ -31,10 +31,13 @@ $(document).ready(function() {
 		$("body").removeClass("fixed");
 	});
 
-	$(".submenu-container").hover(function() {
+	$(".submenu-container").on( "mouseenter" , function() {
 	  $(".submenu").show("blind", 500);
-	},
-	function(){
+	  console.log("showing");
+	});
+
+	$(".submenu-container").on( "mouseleave" , function(){
 	   $(".submenu").hide("blind", 500);
+	   console.log("hiding");
 	});
 });
